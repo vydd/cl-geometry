@@ -1,6 +1,10 @@
 doc
-
-#emacs temporary files
-*~
-
 *.fasl
+*.falsl
+*.dx64fsl
+.\#*
+\#*
+*~
+scratchpad.lisp
+todo.org
+notes.org

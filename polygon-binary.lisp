@@ -25,12 +25,12 @@
             (rst (cdr edge-list))
             (racc nil))
         (if (point-equal-p (start head) (end head))
-            (sanitize-edges rst acc)
+            (recurse-sanitize-edges rst acc)
             (progn
               (dolist (tk rst)
                 (unless (merge-line-segment-into head tk)
                   (push tk racc)))
-              (sanitize-edges racc (cons head acc)))))))
+              (recurse-sanitize-edges racc (cons head acc)))))))
 
 (defun sanitize-edges (edge-list)
   "Drop zero length edges and merge all segment intersecting edges."

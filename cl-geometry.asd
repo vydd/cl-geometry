@@ -2,7 +2,7 @@
   :description "Library for two dimensional geometry."
   :version "0.0.3"
   :licence "BSD-style"
-  :author "Jakub Higersberger <ramarren@gmail.com>"
+  :author "Jakub Higersberger <ramarren@gmail.com>, Danilo Vidovic (vydd) <vidovicd@gmail.com>"
   :components ((:file "package" :depends-on ("heap"))
                (:file "trivial-geometry" :depends-on ("package"))
                (:file "basic-point" :depends-on ("package"))
